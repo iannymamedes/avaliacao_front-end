@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="avaliacao2.css">
+    <title>2ª Avaliação Front-End</title>
+    <link rel="icon" type="image/jpg" href="iconeform.jpg">
+    <script src="avaliacao2.js"></script>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Formulário</h1>
+        <p id="subtitulo">Preencha suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+        </fieldset>
+
+
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Idade</strong></label>
+            <input type="text" name="idade" id="idade">
+        </div>
+
+        <div class="campo">
+            <label><strong>Você tem mais de 18 anos?</strong></label>
+            <input type="radio" name="maioridade" value="True" id="maiorid"> Sim
+            <input type="radio" name="maioridade" value="False" id="maiorid"> Não
+        </div>
+
+        <div class="campo">Deseja receber newsletter?</div>
+        <input type="checkbox" name="newsletter" id="newsletter" value="True">
+
+        <div class="campo">
+            <br>
+            <label><strong>Deixe aqui sua mensagem ou sugestão</strong></label>
+            <textarea row="6" style="width: 26em" id="mensagem" nome="mensagem"></textarea>
+        </div>
+
+        <br>
+        
+    
+        <button type="button" class="enviar" id="enviar">Enviar</button>
+        <button type="button" class="limpar">Limpar</button>
+        
+
+    </form>
+
+    
+</body>
+</html>
